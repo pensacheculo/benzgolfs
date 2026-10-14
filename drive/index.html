@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Drive | Benz Golfs Program</title>
+<meta name="description" content="The Drive by Benz Golfs: a five hole swing program. Each hole has skill gates you pass on video, a drill plan, and a badge to earn.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Archivo+Expanded:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0d120e;
+    --pine: #10382a;
+    --pine-deep: #0b2a1f;
+    --cream: #f4f1e8;
+    --cream-dim: #e8e3d4;
+    --volt: #c9f24d;
+    --gray: #7d857e;
+    --radius: 14px;
+    /* level colors */
+    --lv-red: #e2574b;
+    --lv-gold: #eab84e;
+    --lv-white: #f4f1e8;
+    --lv-blue: #5b93e0;
+    --lv-black: #23282f;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--ink);
+    color: var(--cream);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .display {
+    font-family: 'Archivo Expanded', 'Archivo', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 1.02;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  .eyebrow {
+    display: inline-block; font-size: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.22em;
+    color: var(--volt); margin-bottom: 18px;
+  }
+  .btn {
+    display: inline-block; font-weight: 800; font-size: 15px;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    text-decoration: none; padding: 16px 30px; border-radius: 999px;
+    transition: transform .15s ease, box-shadow .15s ease;
+    cursor: pointer; border: none;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-volt { background: var(--volt); color: var(--ink); }
+  .btn-volt:hover { box-shadow: 0 8px 28px rgba(201,242,77,0.35); }
+  .btn-ghost { background: transparent; color: var(--cream); border: 1.5px solid rgba(244,241,232,0.35); }
+  .btn-ghost:hover { border-color: var(--cream); }
+
+  /* ---------- NAV ---------- */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(13,18,14,0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(244,241,232,0.08);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .wordmark { display: flex; align-items: center; text-decoration: none; }
+  .nav-links { display: flex; align-items: center; gap: 30px; }
+  .nav-links a {
+    color: var(--cream); text-decoration: none; font-size: 13px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.75; transition: opacity .15s;
+  }
+  .nav-links a:hover { opacity: 1; }
+  .nav-links a.nav-cta { color: var(--ink); opacity: 1; }
+  .nav-cta { padding: 11px 22px; font-size: 12px; }
+  @media (max-width: 760px) { .nav-links { display: none; } }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    background:
+      radial-gradient(ellipse 80% 60% at 75% 20%, rgba(16,56,42,0.85), transparent 65%),
+      radial-gradient(ellipse 50% 45% at 15% 90%, rgba(201,242,77,0.08), transparent 60%),
+      var(--ink);
+    padding: 92px 0 72px;
+    overflow: hidden;
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
+  .hero h1 { font-size: clamp(40px, 5.6vw, 68px); color: var(--cream); }
+  .hero h1 .accent { color: var(--volt); }
+  .hero-sub { margin-top: 24px; font-size: 18px; color: var(--cream-dim); max-width: 520px; font-weight: 500; }
+  .hero-sub strong { color: var(--cream); }
+  .hero-ctas { margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .hero-note { margin-top: 18px; font-size: 13px; color: var(--gray); font-weight: 500; }
+
+  /* tee ladder visual */
+  .ladder-visual {
+    display: flex; flex-direction: column; gap: 12px;
+    background: linear-gradient(160deg, rgba(16,56,42,0.5), rgba(16,56,42,0.12));
+    border: 1px solid rgba(244,241,232,0.09);
+    border-radius: var(--radius); padding: 28px;
+  }
+  .rung { display: flex; align-items: center; gap: 14px; padding: 10px 12px; border-radius: 10px; transition: background .2s; }
+  .rung:hover { background: rgba(244,241,232,0.05); }
+  .rung .tee { width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0; box-shadow: 0 0 12px rgba(0,0,0,0.4); }
+  .rung .tee.ring { box-shadow: inset 0 0 0 2px rgba(244,241,232,0.35); }
+  .rung .rname { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; text-transform: uppercase; font-size: 15px; letter-spacing: 0.02em; }
+  .rung .rsub { font-size: 12.5px; color: var(--gray); font-weight: 600; margin-left: auto; text-align: right; }
+  .ladder-visual .cap { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--volt); margin-bottom: 6px; }
+  @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } }
+
+
+  /* roadmap hero visual */
+  .roadmap-visual {
+    background: linear-gradient(160deg, rgba(16,56,42,0.5), rgba(16,56,42,0.12));
+    border: 1px solid rgba(244,241,232,0.09);
+    border-radius: var(--radius); padding: 24px 24px 8px;
+  }
+  .roadmap-visual .cap { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--volt); display:block; margin-bottom: 4px; }
+  .roadmap-visual svg { width: 100%; height: auto; display: block; }
+  .roadmap-visual .rlabel { font-family: 'Archivo Expanded', Archivo, sans-serif; font-weight: 900; font-size: 13px; letter-spacing: 0.06em; fill: var(--cream); text-transform: uppercase; }
+  .roadmap-visual .rsub { font-family: Archivo, sans-serif; font-weight: 600; font-size: 9.5px; letter-spacing: 0.14em; fill: var(--gray); text-transform: uppercase; }
+
+
+  .course-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 12px 4px 10px; }
+  .course-legend span { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600; color: var(--gray); }
+  .course-legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+  /* road spine through the stage cards */
+  .road { position: relative; padding-left: 42px; }
+  .road::before {
+    content: ""; position: absolute; left: 11px; top: 12px; bottom: 12px;
+    width: 8px; border-radius: 4px; background: #1d2620;
+  }
+  .road::after {
+    content: ""; position: absolute; left: 14.5px; top: 20px; bottom: 20px;
+    border-left: 2px dashed rgba(244,241,232,0.3);
+  }
+  .road details { position: relative; overflow: visible; }
+  .road details::before {
+    content: ""; position: absolute; left: -37px; top: 34px;
+    width: 18px; height: 18px; border-radius: 50%; z-index: 2;
+    box-shadow: 0 0 0 4px var(--ink);
+  }
+  .road details.lv-red::before { background: var(--lv-red); }
+  .road details.lv-gold::before { background: var(--lv-gold); }
+  .road details.lv-white::before { background: var(--lv-white); }
+  .road details.lv-blue::before { background: var(--lv-blue); }
+  .road details.lv-black::before { background: var(--lv-black); box-shadow: 0 0 0 4px var(--ink), inset 0 0 0 2px rgba(244,241,232,0.5); }
+  @media (max-width: 700px) { .road { padding-left: 34px; } .road details::before { left: -30px; } }
+
+  /* ---------- SECTIONS ---------- */
+  section { padding: 84px 0; }
+  .sec-head { max-width: 680px; margin-bottom: 48px; }
+  .sec-head h2 { font-size: clamp(30px, 4vw, 46px); }
+  .sec-head p { margin-top: 16px; color: var(--gray); font-size: 17px; font-weight: 500; }
+
+  /* ---------- HOW ---------- */
+  #how { background: var(--pine-deep); }
+  .loop { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .loop-step {
+    background: linear-gradient(160deg, rgba(13,18,14,0.55), rgba(13,18,14,0.2));
+    border: 1px solid rgba(244,241,232,0.09);
+    border-radius: var(--radius); padding: 26px 24px;
+  }
+  .loop-step .n { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; color: var(--volt); font-size: 14px; letter-spacing: 0.1em; display: block; margin-bottom: 26px; }
+  .loop-step h3 { font-size: 17px; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; }
+  .loop-step p { color: var(--gray); font-size: 14px; font-weight: 500; }
+  .loop-step p strong { color: var(--cream-dim); }
+  @media (max-width: 860px) { .loop { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .loop { grid-template-columns: 1fr; } }
+
+  /* ---------- LEVELS ---------- */
+  .level {
+    border-radius: var(--radius);
+    border: 1px solid rgba(244,241,232,0.1);
+    margin-bottom: 22px;
+    overflow: hidden;
+    background: linear-gradient(160deg, rgba(16,56,42,0.35), rgba(13,18,14,0.2));
+  }
+  .level-head {
+    display: flex; align-items: center; gap: 18px;
+    padding: 24px 28px; cursor: pointer; list-style: none;
+  }
+  .level-head::-webkit-details-marker { display: none; }
+  .level-badge {
+    width: 58px; height: 58px; border-radius: 50%; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Archivo Expanded', sans-serif; font-weight: 900; font-size: 26px;
+    position: relative;
+  }
+  .level-badge .dot {
+    position: absolute; right: 2px; bottom: 6px;
+    width: 13px; height: 13px; border-radius: 50%;
+  }
+  .level-title { flex-grow: 1; }
+  .level-title .lv { font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gray); display: block; margin-bottom: 3px; }
+  .level-title h3 { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; text-transform: uppercase; font-size: 21px; }
+  .level-title .tag { font-size: 13.5px; color: var(--gray); font-weight: 600; margin-top: 3px; }
+  .level-open-ind { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; font-size: 22px; color: var(--volt); transition: transform .2s; }
+  details[open] .level-open-ind { transform: rotate(45deg); }
+  .level-body { padding: 4px 28px 30px 104px; }
+  .level-body .goal { font-size: 15.5px; color: var(--cream-dim); font-weight: 500; margin-bottom: 18px; max-width: 640px; }
+  .gates { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 26px; margin-bottom: 18px; }
+  .gate { display: flex; gap: 11px; font-size: 14.5px; font-weight: 500; color: var(--cream-dim); align-items: flex-start; }
+  .gate .box {
+    width: 18px; height: 18px; border-radius: 5px; flex-shrink: 0; margin-top: 2px;
+    border: 2px solid rgba(244,241,232,0.35);
+  }
+  .level-meta { display: flex; gap: 26px; flex-wrap: wrap; font-size: 12.5px; color: var(--gray); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
+  .level-meta b { color: var(--volt); }
+  @media (max-width: 700px) {
+    .level-body { padding-left: 28px; }
+    .gates { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- SCORECARD ---------- */
+  #scorecard { background: var(--pine-deep); }
+  .score-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+  .score-copy p { color: var(--cream-dim); font-size: 16.5px; font-weight: 500; margin-bottom: 16px; }
+  .score-copy p strong { color: var(--cream); }
+  .scard {
+    background: var(--cream); color: var(--ink);
+    border-radius: var(--radius); padding: 30px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+    max-width: 420px;
+  }
+  .scard .sc-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  .scard .sc-head .nm { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; text-transform: uppercase; font-size: 16px; }
+  .scard .sc-head .lvl { font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; background: var(--lv-gold); padding: 5px 12px; border-radius: 999px; }
+  .sc-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(13,18,14,0.08); font-size: 14px; font-weight: 600; }
+  .sc-row .t { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
+  .sc-row .st { margin-left: auto; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+  .sc-row .st.done { color: #1c7a4d; }
+  .sc-row .st.now { color: #b8860b; }
+  .sc-row .st.next { color: #9a9a90; }
+  @media (max-width: 860px) { .score-grid { grid-template-columns: 1fr; } }
+
+  /* ---------- PRICING ---------- */
+  .pr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; max-width: 860px; }
+  .pr-card {
+    border: 1px solid rgba(244,241,232,0.12); border-radius: var(--radius);
+    padding: 34px 30px;
+    background: linear-gradient(160deg, rgba(16,56,42,0.4), rgba(13,18,14,0.2));
+  }
+  .pr-card.featured { background: var(--pine); border-color: rgba(201,242,77,0.4); box-shadow: 0 24px 60px rgba(11,42,31,0.4); position: relative; }
+  .pr-card .badge {
+    position: absolute; top: -13px; left: 30px;
+    background: var(--volt); color: var(--ink);
+    font-size: 11px; font-weight: 800; text-transform: uppercase;
+    letter-spacing: 0.12em; padding: 6px 14px; border-radius: 999px;
+  }
+  .pr-card h3 { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; text-transform: uppercase; font-size: 19px; }
+  .pr-card .pp { margin: 16px 0 6px; }
+  .pr-card .pp .amount { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; font-size: 44px; }
+  .pr-card .pp .per { font-size: 14px; color: var(--gray); font-weight: 600; }
+  .pr-card .blurb { color: var(--gray); font-size: 14.5px; font-weight: 500; margin-bottom: 20px; }
+  .pr-card ul { list-style: none; margin-bottom: 26px; }
+  .pr-card li { font-size: 14.5px; font-weight: 500; padding: 8px 0 8px 26px; position: relative; border-bottom: 1px solid rgba(244,241,232,0.08); color: var(--cream-dim); }
+  .pr-card li::before { content: "✓"; position: absolute; left: 2px; color: var(--volt); font-weight: 800; }
+  @media (max-width: 760px) { .pr-grid { grid-template-columns: 1fr; } }
+  .alacarte-label {
+    max-width: 860px; margin: 46px 0 18px;
+    display: flex; align-items: center; gap: 16px;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--gray);
+  }
+  .alacarte-label::after { content: ""; flex-grow: 1; height: 1px; background: rgba(244,241,232,0.12); }
+  .oneoff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; max-width: 860px; }
+  .oneoff-card {
+    border: 1px solid rgba(244,241,232,0.12); border-radius: var(--radius);
+    padding: 26px 28px;
+    background: rgba(16,56,42,0.18);
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .oneoff-card h4 { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; text-transform: uppercase; font-size: 15px; }
+  .oneoff-card .op { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; font-size: 26px; }
+  .oneoff-card .op span { font-family: 'Archivo', sans-serif; font-size: 13px; color: var(--gray); font-weight: 600; }
+  .oneoff-card p { font-size: 13.5px; color: var(--gray); font-weight: 500; flex-grow: 1; }
+  .oneoff-card .btn { padding: 12px 22px; font-size: 12.5px; align-self: flex-start; margin-top: 6px; }
+  @media (max-width: 760px) { .oneoff-grid { grid-template-columns: 1fr; } }
+
+  /* ---------- FINAL ---------- */
+  .final {
+    background:
+      radial-gradient(ellipse 70% 80% at 50% 110%, rgba(201,242,77,0.14), transparent 60%),
+      var(--pine-deep);
+    text-align: center; padding: 100px 0;
+  }
+  .final h2 { font-size: clamp(32px, 4.8vw, 54px); max-width: 780px; margin: 0 auto; }
+  .final h2 .accent { color: var(--volt); }
+  .final p { margin: 22px auto 36px; color: var(--cream-dim); font-size: 17px; font-weight: 500; max-width: 520px; }
+
+  footer { padding: 40px 0; border-top: 1px solid rgba(244,241,232,0.08); }
+  .foot-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+  .foot-inner .small { font-size: 13px; color: var(--gray); font-weight: 500; }
+
+  /* ---------- MOBILE TAB BAR ---------- */
+  .tabbar { display: none; }
+  @media (max-width: 760px) {
+    body { padding-bottom: 92px; }
+    section { padding: 60px 0; }
+    .tabbar {
+      display: flex; position: fixed; top: auto; bottom: 0; left: 0; right: 0; z-index: 60; border-bottom: none;
+      background: rgba(13,18,14,0.97);
+      backdrop-filter: blur(14px);
+      border-top: 1px solid rgba(244,241,232,0.14);
+      padding: 10px 4px calc(10px + env(safe-area-inset-bottom));
+      justify-content: space-around; align-items: flex-end;
+    }
+    .tabbar a {
+      display: flex; flex-direction: column; align-items: center; gap: 5px;
+      flex: 1; text-decoration: none;
+      color: var(--gray); font-size: 10px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding-top: 4px;
+    }
+    .tabbar a.active { color: var(--cream); }
+    .tabbar a .tico { width: 20px; height: 20px; display: block; }
+    .tabbar a .tico path, .tabbar a .tico rect, .tabbar a .tico circle { stroke: currentColor; }
+    .tabbar .drive-tab { margin-top: -30px; color: var(--cream); }
+    .tabbar .drive-tab .puck {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--volt); border: 4px solid var(--ink);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 22px rgba(201,242,77,0.45);
+    }
+    .tabbar .drive-tab .puck svg { width: 24px; height: 24px; }
+  }
+</style>
+</head>
+<body>
+<!-- LOGO DEFS -->
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+  <defs>
+    <symbol id="bg-lockup" viewBox="0 0 434 88">
+      <g transform="translate(0,12)">
+        <text x="25" y="49" text-anchor="middle" fill="currentColor" style="font-family:'Archivo Expanded',Archivo,sans-serif;font-weight:900;font-stretch:125%;font-size:48px">B</text>
+        <circle cx="51" cy="43.5" r="6.5" fill="var(--accent,#c9f24d)"/>
+      </g>
+      <text x="84" y="58" style="font-family:'Archivo Expanded',Archivo,sans-serif;font-weight:900;font-stretch:125%;font-size:40px;letter-spacing:1px"><tspan fill="currentColor">BENZ </tspan><tspan fill="var(--golf,#c9f24d)">GOLFS</tspan></text>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="wrap nav-inner">
+    <a class="wordmark" href="/" aria-label="Benz Golfs"><svg width="168" height="34" style="color:var(--cream)"><use href="#bg-lockup"/></svg></a>
+    <div class="nav-links">
+      <a href="#how">How It Works</a>
+      <a href="#levels">The Holes</a>
+      <a href="#scorecard">Scorecard</a>
+      <a href="#join">Pricing</a>
+      <a href="#join" class="btn btn-volt nav-cta">Start The Drive</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">The Benz Golfs Program</span>
+      <h1 class="display">The Drive.<br><span class="accent">First tee to the tips.</span></h1>
+      <p class="hero-sub">A five hole program. Each hole has skills you prove on video. Pass them and you move to the next hole. <strong>You always know exactly what to work on.</strong></p>
+      <div class="hero-ctas">
+        <a href="#join" class="btn btn-volt">Start The Drive</a>
+        <a href="#levels" class="btn btn-ghost">See the Holes</a>
+      </div>
+      <p class="hero-note">Assessed from phone video&nbsp;&nbsp;·&nbsp;&nbsp;Move at your own pace&nbsp;&nbsp;·&nbsp;&nbsp;Every level welcome</p>
+    </div>
+    <div class="roadmap-visual" aria-label="The five holes of The Drive">
+      <span class="cap">The Course</span>
+      <svg viewBox="0 0 420 470" fill="none" role="img">
+        <!-- path -->
+        <path d="M84,430 C170,442 236,404 196,368 C156,332 70,330 132,282 C200,230 300,268 262,212 C230,164 258,140 330,96" stroke="rgba(244,241,232,0.3)" stroke-width="2.5" stroke-dasharray="1 11" stroke-linecap="round"/>
+        <!-- flag at the finish -->
+        <line x1="330" y1="82" x2="330" y2="42" stroke="#f4f1e8" stroke-width="2.5"/>
+        <g transform="translate(330,42)">
+          <rect width="8" height="8" fill="#f4f1e8"/><rect x="8" width="8" height="8" fill="#0d120e" stroke="#f4f1e8" stroke-width="0.5"/>
+          <rect y="8" width="8" height="8" fill="#0d120e" stroke="#f4f1e8" stroke-width="0.5"/><rect x="8" y="8" width="8" height="8" fill="#f4f1e8"/>
+        </g>
+        <!-- stops -->
+        <g><circle cx="84" cy="430" r="15" fill="var(--lv-red)"/><text x="84" y="435" text-anchor="middle" fill="#0d120e" style="font-family:Archivo,sans-serif;font-weight:800;font-size:13px">1</text></g>
+        <g><circle cx="196" cy="368" r="15" fill="var(--lv-gold)"/><text x="196" y="373" text-anchor="middle" fill="#0d120e" style="font-family:Archivo,sans-serif;font-weight:800;font-size:13px">2</text></g>
+        <g><circle cx="132" cy="282" r="15" fill="var(--lv-white)"/><text x="132" y="287" text-anchor="middle" fill="#0d120e" style="font-family:Archivo,sans-serif;font-weight:800;font-size:13px">3</text></g>
+        <g><circle cx="262" cy="212" r="15" fill="var(--lv-blue)"/><text x="262" y="217" text-anchor="middle" fill="#0d120e" style="font-family:Archivo,sans-serif;font-weight:800;font-size:13px">4</text></g>
+        <g><circle cx="330" cy="96" r="15" fill="var(--lv-black)" stroke="rgba(244,241,232,0.6)" stroke-width="1.5"/><text x="330" y="101" text-anchor="middle" fill="#f4f1e8" style="font-family:Archivo,sans-serif;font-weight:800;font-size:13px">5</text></g>
+      </svg>
+      <div class="course-legend">
+        <span><i style="background:var(--lv-red)"></i>1 Red Tee · Foundation</span>
+        <span><i style="background:var(--lv-gold)"></i>2 Gold Tee · Strike</span>
+        <span><i style="background:var(--lv-white)"></i>3 White Tee · Flight</span>
+        <span><i style="background:var(--lv-blue)"></i>4 Blue Tee · Engine</span>
+        <span><i style="background:var(--lv-black);box-shadow:inset 0 0 0 1.5px rgba(244,241,232,0.5)"></i>5 The Tips · Scorer</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HOW ============ -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="display">How the program works</h2>
+      <p>You are placed on a starting hole, given the exact skills to earn, and you move to the next hole when you show them on video.</p>
+    </div>
+    <div class="loop">
+      <div class="loop-step">
+        <span class="n">01 / PLACE</span>
+        <h3>Get placed</h3>
+        <p>Send two swings. Jakob's placement breakdown gives you your starting hole, your <strong>one biggest fault</strong>, and your first drill block.</p>
+      </div>
+      <div class="loop-step">
+        <span class="n">02 / TRAIN</span>
+        <h3>Run your drills</h3>
+        <p>Each hole has a drill plan you can run at the range or in the garage. <strong>15–20 minutes, 2–3x a week.</strong> No launch monitor needed.</p>
+      </div>
+      <div class="loop-step">
+        <span class="n">03 / TEST</span>
+        <h3>Film your test</h3>
+        <p>When you are ready, film your hole test using the same two angles and send it in for assessment.</p>
+      </div>
+      <div class="loop-step">
+        <span class="n">04 / ADVANCE</span>
+        <h3>Move to the next hole</h3>
+        <p>Pass the gates and you advance. New badge, new drills, next hole. <strong>If you do not pass, you get the exact reason and what to fix.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEVELS ============ -->
+<section id="levels">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The Levels</span>
+      <h2 class="display">Five holes. Played in order.</h2>
+      <p>Faults have an order. Distance is useless on a broken strike, and a strike is useless on a broken setup. The Drive fixes your swing in that order.</p>
+    </div>
+
+    <div class="road">
+    <details class="level lv-red" open>
+      <summary class="level-head">
+        <span class="level-badge" style="background:rgba(226,87,75,0.15);color:var(--lv-red)">B<span class="dot" style="background:var(--lv-red)"></span></span>
+        <span class="level-title">
+          <span class="lv">Hole 1</span>
+          <h3>Red Tee: The Foundation</h3>
+          <span class="tag">Grip, setup, posture, alignment.</span>
+        </span>
+        <span class="level-open-ind">+</span>
+      </summary>
+      <div class="level-body">
+        <p class="goal">Goal: a repeatable setup. It is the fastest way to drop shots, and every hole after this one depends on it.</p>
+        <div class="gates">
+          <div class="gate"><span class="box"></span>Neutral grip held through 10 straight swings (no re-grip at the top)</div>
+          <div class="gate"><span class="box"></span>Posture checkpoint: spine angle set and held at address, face-on &amp; down-the-line</div>
+          <div class="gate"><span class="box"></span>Alignment: feet/hips/shoulders matched to target line with a club down</div>
+          <div class="gate"><span class="box"></span>Consistent ball position for wedge, mid-iron, and driver</div>
+        </div>
+        <div class="level-meta"><span>Typical time: <b>2–4 weeks</b></span><span>Test: <b>setup video, 3 clubs</b></span><span>Badge: <b>Red dot</b></span></div>
+      </div>
+    </details>
+
+    <details class="level lv-gold">
+      <summary class="level-head">
+        <span class="level-badge" style="background:rgba(234,184,78,0.15);color:var(--lv-gold)">B<span class="dot" style="background:var(--lv-gold)"></span></span>
+        <span class="level-title">
+          <span class="lv">Hole 2</span>
+          <h3>Gold Tee: The Strike</h3>
+          <span class="tag">Contact and low point control.</span>
+        </span>
+        <span class="level-open-ind">+</span>
+      </summary>
+      <div class="level-body">
+        <p class="goal">Goal: ball first, ground second, every time. Controlling your low point removes thin and fat shots.</p>
+        <div class="gates">
+          <div class="gate"><span class="box"></span>7/10 ball-first strikes with a mid-iron (towel or line drill on video)</div>
+          <div class="gate"><span class="box"></span>Divot starts in front of the ball, not behind it</div>
+          <div class="gate"><span class="box"></span>Weight on the lead side at impact, no hanging back</div>
+          <div class="gate"><span class="box"></span>Centered face contact 6/10 (foot-spray or impact tape)</div>
+        </div>
+        <div class="level-meta"><span>Typical time: <b>4–8 weeks</b></span><span>Test: <b>10-ball strike test</b></span><span>Badge: <b>Gold dot</b></span></div>
+      </div>
+    </details>
+
+    <details class="level lv-white">
+      <summary class="level-head">
+        <span class="level-badge" style="background:rgba(244,241,232,0.12);color:var(--lv-white)">B<span class="dot" style="background:var(--lv-white);box-shadow:inset 0 0 0 1.5px rgba(13,18,14,0.3)"></span></span>
+        <span class="level-title">
+          <span class="lv">Hole 3</span>
+          <h3>White Tee: The Flight</h3>
+          <span class="tag">Ball flight control.</span>
+        </span>
+        <span class="level-open-ind">+</span>
+      </summary>
+      <div class="level-body">
+        <p class="goal">Goal: the ball starts where you aim it and curves the way you chose. You learn to control face and path.</p>
+        <div class="gates">
+          <div class="gate"><span class="box"></span>7/10 shots starting on your intended line</div>
+          <div class="gate"><span class="box"></span>One reliable stock shape (draw or fade) you can call before you swing</div>
+          <div class="gate"><span class="box"></span>Big miss reduced: no more than 1 in 10 with the old curve</div>
+          <div class="gate"><span class="box"></span>Trajectory control: show a stock, a lower, and a higher flight with one club</div>
+        </div>
+        <div class="level-meta"><span>Typical time: <b>6–10 weeks</b></span><span>Test: <b>called-shot video test</b></span><span>Badge: <b>White dot</b></span></div>
+      </div>
+    </details>
+
+    <details class="level lv-blue">
+      <summary class="level-head">
+        <span class="level-badge" style="background:rgba(91,147,224,0.15);color:var(--lv-blue)">B<span class="dot" style="background:var(--lv-blue)"></span></span>
+        <span class="level-title">
+          <span class="lv">Hole 4</span>
+          <h3>Blue Tee: The Engine</h3>
+          <span class="tag">Speed and distance without losing your strike.</span>
+        </span>
+        <span class="level-open-ind">+</span>
+      </summary>
+      <div class="level-body">
+        <p class="goal">Goal: more distance through better sequencing, not harder swinging. Ground force, rotation, and a reliable driver.</p>
+        <div class="gates">
+          <div class="gate"><span class="box"></span>Proper sequence on video: hips lead, chest follows, arms last</div>
+          <div class="gate"><span class="box"></span>Driver carry up a measurable step from your Level 3 baseline</div>
+          <div class="gate"><span class="box"></span>Speed session protocol done 2x/week for four weeks</div>
+          <div class="gate"><span class="box"></span>Keep it: 7/10 fairway-window drives at your new speed</div>
+        </div>
+        <div class="level-meta"><span>Typical time: <b>8–12 weeks</b></span><span>Test: <b>driver session video</b></span><span>Badge: <b>Blue dot</b></span></div>
+      </div>
+    </details>
+
+    <details class="level lv-black">
+      <summary class="level-head">
+        <span class="level-badge" style="background:rgba(35,40,47,0.6);color:var(--cream)">B<span class="dot" style="background:var(--lv-black);box-shadow:inset 0 0 0 1.5px rgba(244,241,232,0.4)"></span></span>
+        <span class="level-title">
+          <span class="lv">Hole 5</span>
+          <h3>The Tips: The Scorer</h3>
+          <span class="tag">On-course scoring. The final hole.</span>
+        </span>
+        <span class="level-open-ind">+</span>
+      </summary>
+      <div class="level-body">
+        <p class="goal">Goal: take the swing to the course. Scoring shots, smart misses, and a pre-shot routine that holds up under pressure.</p>
+        <div class="gates">
+          <div class="gate"><span class="box"></span>Wedge distance control: three stock numbers you can hit on demand</div>
+          <div class="gate"><span class="box"></span>On-course video: routine + commitment on 9 documented holes</div>
+          <div class="gate"><span class="box"></span>Miss management: your bad shot is playable (show the pattern)</div>
+          <div class="gate"><span class="box"></span>Beat your entry handicap by the target you and Jakob set</div>
+        </div>
+        <div class="level-meta"><span>Typical time: <b>ongoing</b></span><span>Test: <b>on-course assessment</b></span><span>Badge: <b>Black dot, Tips graduate</b></span></div>
+      </div>
+    </details>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ SCORECARD ============ -->
+<section id="scorecard">
+  <div class="wrap score-grid">
+    <div class="score-copy">
+      <span class="eyebrow">Your Scorecard</span>
+      <h2 class="display" style="font-size:clamp(28px,3.6vw,42px);margin-bottom:20px;">You always know where you stand</h2>
+      <p>Every member gets a scorecard: your current hole, the gates you have passed, and the next skill you need. <strong>Nothing vague.</strong></p>
+      <p>When you pass a hole you get a badge: the B-dot in that hole's color, sized for an Instagram story. Post it and tag Benz Golfs.</p>
+    </div>
+    <div class="scard" aria-label="Example scorecard">
+      <div class="sc-head">
+        <span class="nm">M. Rivera</span>
+        <span class="lvl">Gold Tee</span>
+      </div>
+      <div class="sc-row"><span class="t" style="background:var(--lv-red)"></span>Hole 1 · Red Tee<span class="st done">Complete</span></div>
+      <div class="sc-row"><span class="t" style="background:var(--lv-gold)"></span>Hole 2 · Gold Tee<span class="st now">3 of 4 gates</span></div>
+      <div class="sc-row"><span class="t" style="background:var(--lv-white);box-shadow:inset 0 0 0 1.5px rgba(13,18,14,0.25)"></span>Hole 3 · White Tee<span class="st next">Ahead</span></div>
+      <div class="sc-row"><span class="t" style="background:var(--lv-blue)"></span>Hole 4 · Blue Tee<span class="st next">Ahead</span></div>
+      <div class="sc-row"><span class="t" style="background:var(--lv-black)"></span>Hole 5 · The Tips<span class="st next">Ahead</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="join">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Join</span>
+      <h2 class="display">Two ways to drive</h2>
+      <p>The Drive is a membership. Standard is the full program on video. Premium adds a live lesson with Jakob every month.</p>
+    </div>
+    <div class="pr-grid">
+      <div class="pr-card">
+        <h3>Drive Standard</h3>
+        <div class="pp"><span class="amount">$59</span><span class="per">/ month</span></div>
+        <p class="blurb">The full program, assessed on video. Cancel anytime. Your badges stay yours.</p>
+        <ul>
+          <li>Placement breakdown + your starting hole and drill plan</li>
+          <li>One full video assessment every month</li>
+          <li>Hole tests reviewed within 72 hours</li>
+          <li>Scorecard tracking + level badges</li>
+          <li>Members' drill library for your hole</li>
+        </ul>
+        <a href="#" class="btn btn-ghost" style="width:100%;text-align:center;">Start The Drive · $59/mo</a>
+      </div>
+      <div class="pr-card featured">
+        <span class="badge">Premium: Live Coaching</span>
+        <h3>Drive Premium</h3>
+        <div class="pp"><span class="amount">$99</span><span class="per">/ month</span></div>
+        <p class="blurb">Everything in Standard plus a live call with Jakob every month.</p>
+        <ul>
+          <li>Everything in Drive Standard</li>
+          <li>Live 30-minute 1-on-1 Zoom lesson every month</li>
+          <li>Lesson recording + written notes after every call</li>
+          <li>Member pricing on on-course demo videos ($59 vs $89)</li>
+          <li>First claim on extra lesson slots each week</li>
+        </ul>
+        <a href="#" class="btn btn-volt" style="width:100%;text-align:center;">Go Premium · $99/mo</a>
+      </div>
+    </div>
+
+    <div class="alacarte-label">One-time options</div>
+    <div class="oneoff-grid">
+      <div class="oneoff-card">
+        <h4>Swing Breakdown</h4>
+        <div class="op">$39 <span>one-time</span></div>
+        <p>One video breakdown: your one or two biggest faults plus drills, delivered in 48–72 hours. Counts as your placement and credits toward your first month if you join The Drive within 30 days.</p>
+        <a href="#" class="btn btn-ghost">Get a Breakdown</a>
+      </div>
+      <div class="oneoff-card">
+        <h4>Live 1-on-1 Lesson</h4>
+        <div class="op">$65 <span>/ 30 min</span> &nbsp;·&nbsp; $110 <span>/ 60 min</span></div>
+        <p>A single live Zoom lesson, no membership required. Swing on camera or review footage together. You leave with a practice plan.</p>
+        <a href="#" class="btn btn-ghost">Book a Lesson</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL ============ -->
+<section class="final">
+  <div class="wrap">
+    <h2 class="display">Start at Hole 1.<br><span class="accent">Send your swing.</span></h2>
+    <p>Two videos from your phone. You get your placement, your drill plan, and your first hole to play.</p>
+    <a href="#join" class="btn btn-volt">Start The Drive · From $59/mo</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <a class="wordmark" href="#top" aria-label="Benz Golfs"><svg width="133" height="27" style="color:var(--cream)"><use href="#bg-lockup"/></svg></a>
+    <span class="small">The Drive is a Benz Golfs program · © 2026 Benz Golfs</span>
+  </div>
+</footer>
+
+<nav class="tabbar" aria-label="Mobile navigation">
+  <a href="/"><svg class="tico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 L12 4 L21 11 M6 10 V20 H18 V10"/></svg><span>Home</span></a>
+  <a href="#levels"><svg class="tico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21 V4 M6 4 H17 L14.5 7.5 L17 11 H6"/></svg><span>Holes</span></a>
+  <a href="#top" class="drive-tab active"><span class="puck"><svg viewBox="0 0 24 24" fill="none"><line x1="7" y1="21" x2="7" y2="3" stroke="#0d120e" stroke-width="2.4" stroke-linecap="round"/><g><rect x="7" y="3" width="5" height="5" fill="#0d120e"/><rect x="12" y="3" width="5" height="5" fill="none" stroke="#0d120e" stroke-width="1.2"/><rect x="7" y="8" width="5" height="5" fill="none" stroke="#0d120e" stroke-width="1.2"/><rect x="12" y="8" width="5" height="5" fill="#0d120e"/></g></svg></span><span>The Drive</span></a>
+  <a href="#scorecard"><svg class="tico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 10 H17 M7 14 H13"/></svg><span>Scorecard</span></a>
+  <a href="#join"><svg class="tico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 H20 V11 L11 20 L3 12 Z"/><circle cx="16" cy="7" r="1.6"/></svg><span>Join</span></a>
+</nav>
+</body>
+</html>

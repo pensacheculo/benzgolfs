@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benz Golfs | Send Your Swing. Get the Fix.</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="description" content="Benz Golfs: personal swing breakdowns from Jakob Benz. Send two videos of your swing and get a full video analysis of what's wrong and exactly how to fix it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Archivo+Expanded:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0d120e;
+    --pine: #10382a;
+    --pine-deep: #0b2a1f;
+    --cream: #f4f1e8;
+    --cream-dim: #e8e3d4;
+    --volt: #c9f24d;
+    --volt-dim: #a8d434;
+    --gray: #7d857e;
+    --radius: 14px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--ink);
+    color: var(--cream);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .display {
+    font-family: 'Archivo Expanded', 'Archivo', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 1.02;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--volt);
+    margin-bottom: 18px;
+  }
+  .btn {
+    display: inline-block;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 999px;
+    transition: transform .15s ease, box-shadow .15s ease;
+    cursor: pointer;
+    border: none;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-volt { background: var(--volt); color: var(--ink); box-shadow: 0 0 0 rgba(201,242,77,0); }
+  .btn-volt:hover { box-shadow: 0 8px 28px rgba(201,242,77,0.35); }
+  .btn-ghost { background: transparent; color: var(--cream); border: 1.5px solid rgba(244,241,232,0.35); }
+  .btn-ghost:hover { border-color: var(--cream); }
+
+  /* ---------- NAV ---------- */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(13,18,14,0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(244,241,232,0.08);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .wordmark {
+    font-family: 'Archivo Expanded', sans-serif;
+    font-weight: 900; font-size: 19px;
+    text-transform: uppercase; letter-spacing: 0.02em;
+    color: var(--cream); text-decoration: none;
+    display: flex; align-items: center; gap: 9px;
+  }
+  .wordmark .tee {
+    width: 11px; height: 11px; background: var(--volt);
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(201,242,77,0.6);
+  }
+  .wordmark em { font-style: normal; color: var(--volt); }
+  .nav-links { display: flex; align-items: center; gap: 30px; }
+  .nav-links a {
+    color: var(--cream); text-decoration: none;
+    font-size: 13px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    opacity: 0.75; transition: opacity .15s;
+  }
+  .nav-links a:hover { opacity: 1; }
+  .nav-links a.nav-cta { color: var(--ink); opacity: 1; }
+  .nav-cta { padding: 11px 22px; font-size: 12px; }
+  .nav-links a.drive-link { color: var(--volt); opacity: 1; border: 1.5px solid rgba(201,242,77,0.45); padding: 8px 16px; border-radius: 999px; }
+  @media (max-width: 760px) { .nav-links { display: none; } }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    background:
+      radial-gradient(ellipse 80% 60% at 75% 20%, rgba(16,56,42,0.85), transparent 65%),
+      radial-gradient(ellipse 50% 45% at 15% 90%, rgba(201,242,77,0.08), transparent 60%),
+      var(--ink);
+    padding: 96px 0 80px;
+    overflow: hidden;
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center; }
+  .hero h1 { font-size: clamp(42px, 6vw, 74px); color: var(--cream); }
+  .hero h1 .accent { color: var(--volt); }
+  .hero-sub {
+    margin-top: 24px; font-size: 18px; color: var(--cream-dim);
+    max-width: 520px; font-weight: 500;
+  }
+  .hero-sub strong { color: var(--cream); }
+  .hero-ctas { margin-top: 36px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .hero-note { margin-top: 18px; font-size: 13px; color: var(--gray); font-weight: 500; }
+  .hero-media {
+    aspect-ratio: 4/5; border-radius: var(--radius);
+    border: 2px dashed rgba(201,242,77,0.4);
+    background: rgba(16,56,42,0.35);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 10px; text-align: center; padding: 24px;
+  }
+  .placeholder-tag {
+    font-size: 11px; font-weight: 800; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--volt);
+  }
+  .placeholder-desc { font-size: 14px; color: var(--gray); max-width: 260px; }
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-media { max-width: 380px; margin: 0 auto; }
+  }
+
+  /* ---------- TICKER ---------- */
+  .ticker {
+    background: var(--volt); color: var(--ink);
+    padding: 13px 0; overflow: hidden; white-space: nowrap;
+  }
+  .ticker-track { display: inline-block; animation: scroll 28s linear infinite; }
+  .ticker span {
+    font-weight: 800; font-size: 13px; text-transform: uppercase;
+    letter-spacing: 0.12em; margin-right: 14px;
+  }
+  .ticker .dot { margin-right: 14px; font-weight: 900; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ---------- SECTIONS ---------- */
+  section { padding: 88px 0; }
+  .sec-head { max-width: 640px; margin-bottom: 52px; }
+  .sec-head h2 { font-size: clamp(30px, 4vw, 46px); }
+  .sec-head p { margin-top: 16px; color: var(--gray); font-size: 17px; font-weight: 500; }
+
+  /* ---------- HOW IT WORKS ---------- */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .step {
+    background: linear-gradient(160deg, rgba(16,56,42,0.5), rgba(16,56,42,0.15));
+    border: 1px solid rgba(244,241,232,0.09);
+    border-radius: var(--radius); padding: 32px 28px;
+  }
+  .step-num {
+    font-family: 'Archivo Expanded', sans-serif;
+    font-weight: 900; font-size: 15px; color: var(--volt);
+    letter-spacing: 0.1em; margin-bottom: 46px; display: block;
+  }
+  .step h3 { font-size: 21px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.01em; margin-bottom: 12px; }
+  .step p { color: var(--gray); font-size: 15px; font-weight: 500; }
+  .step p strong { color: var(--cream-dim); }
+  @media (max-width: 760px) { .steps { grid-template-columns: 1fr; } }
+
+  /* ---------- OFFERS ---------- */
+  #offers { background: var(--cream); color: var(--ink); }
+  #offers .sec-head h2 { color: var(--ink); }
+  #offers .sec-head p { color: #5c6159; }
+  #offers .eyebrow { color: #1c7a4d; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+  .card {
+    background: #fff; border-radius: var(--radius);
+    padding: 34px 30px; display: flex; flex-direction: column;
+    border: 1px solid rgba(13,18,14,0.09);
+    position: relative;
+  }
+  .card.featured {
+    background: var(--pine); color: var(--cream);
+    border: none;
+    box-shadow: 0 24px 60px rgba(11,42,31,0.35);
+  }
+  .badge {
+    position: absolute; top: -13px; left: 30px;
+    background: var(--volt); color: var(--ink);
+    font-size: 11px; font-weight: 800; text-transform: uppercase;
+    letter-spacing: 0.12em; padding: 6px 14px; border-radius: 999px;
+  }
+  .card h3 { font-size: 20px; font-weight: 800; text-transform: uppercase; }
+  .card .tier-tag { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: #1c7a4d; margin-bottom: 10px; }
+  .card.featured .tier-tag { color: var(--volt); }
+  .price { margin: 20px 0 6px; display: flex; align-items: baseline; gap: 8px; }
+  .price .amount { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; font-size: 46px; letter-spacing: -0.02em; }
+  .price .per { font-size: 14px; font-weight: 600; color: #8a9086; }
+  .card.featured .price .per { color: rgba(244,241,232,0.6); }
+  .card .blurb { font-size: 15px; font-weight: 500; color: #5c6159; margin-bottom: 22px; }
+  .card.featured .blurb { color: rgba(244,241,232,0.75); }
+  .card ul { list-style: none; margin-bottom: 28px; flex-grow: 1; }
+  .card li {
+    font-size: 14.5px; font-weight: 500; padding: 9px 0 9px 30px;
+    position: relative; border-bottom: 1px solid rgba(13,18,14,0.06);
+  }
+  .card.featured li { border-bottom-color: rgba(244,241,232,0.1); }
+  .card li::before {
+    content: ""; position: absolute; left: 0; top: 13px;
+    width: 16px; height: 16px; border-radius: 50%;
+    background: rgba(28,122,77,0.12);
+  }
+  .card li::after {
+    content: ""; position: absolute; left: 4.5px; top: 16.5px;
+    width: 7px; height: 4px;
+    border-left: 2px solid #1c7a4d; border-bottom: 2px solid #1c7a4d;
+    transform: rotate(-45deg);
+  }
+  .card.featured li::before { background: rgba(201,242,77,0.15); }
+  .card.featured li::after { border-color: var(--volt); }
+  .card .btn { text-align: center; }
+  .btn-pine { background: var(--pine); color: var(--cream); }
+  .btn-pine:hover { box-shadow: 0 8px 24px rgba(16,56,42,0.3); }
+  .duo-price { font-size: 14px; font-weight: 700; margin-top: 2px; color: #5c6159; }
+  @media (max-width: 900px) { .cards { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; } }
+
+  /* ---------- PROOF ---------- */
+  .proof-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; }
+  .proof-video {
+    aspect-ratio: 16/10; border-radius: var(--radius);
+    border: 2px dashed rgba(201,242,77,0.4);
+    background: rgba(16,56,42,0.35);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 10px; text-align: center; padding: 24px;
+  }
+  .quotes { display: flex; flex-direction: column; gap: 16px; }
+  .quote {
+    background: linear-gradient(160deg, rgba(16,56,42,0.5), rgba(16,56,42,0.15));
+    border: 1px solid rgba(244,241,232,0.09);
+    border-radius: var(--radius); padding: 22px 24px;
+  }
+  .quote p { font-size: 15px; font-weight: 500; color: var(--cream-dim); font-style: italic; }
+  .quote .who { margin-top: 12px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--volt); font-style: normal; }
+  @media (max-width: 860px) { .proof-grid { grid-template-columns: 1fr; } }
+
+  /* ---------- ABOUT ---------- */
+  #about { background: var(--pine-deep); }
+  .about-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 56px; align-items: center; }
+  .about-media {
+    aspect-ratio: 4/5; border-radius: var(--radius);
+    border: 2px dashed rgba(201,242,77,0.4);
+    background: rgba(13,18,14,0.35);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 10px; text-align: center; padding: 24px;
+  }
+  .about-copy h2 { font-size: clamp(28px, 3.6vw, 42px); margin-bottom: 20px; }
+  .about-copy p { color: var(--cream-dim); font-size: 16.5px; font-weight: 500; margin-bottom: 16px; }
+  .stat-row { display: flex; gap: 40px; margin-top: 30px; flex-wrap: wrap; }
+  .stat .num { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; font-size: 32px; color: var(--volt); }
+  .stat .label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--gray); margin-top: 4px; }
+  @media (max-width: 860px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .about-media { max-width: 340px; }
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-list { max-width: 760px; }
+  details {
+    border-bottom: 1px solid rgba(244,241,232,0.1);
+  }
+  summary {
+    cursor: pointer; list-style: none;
+    padding: 24px 40px 24px 0;
+    font-size: 17px; font-weight: 700;
+    position: relative;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+"; position: absolute; right: 4px; top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Archivo Expanded', sans-serif;
+    font-weight: 900; font-size: 22px; color: var(--volt);
+    transition: transform .2s;
+  }
+  details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+  details p { padding: 0 0 24px; color: var(--gray); font-size: 15.5px; font-weight: 500; max-width: 680px; }
+  details p strong { color: var(--cream-dim); }
+
+  /* ---------- FINAL CTA ---------- */
+  .final {
+    background:
+      radial-gradient(ellipse 70% 80% at 50% 110%, rgba(201,242,77,0.14), transparent 60%),
+      var(--pine-deep);
+    text-align: center; padding: 110px 0;
+  }
+  .final h2 { font-size: clamp(34px, 5vw, 58px); max-width: 760px; margin: 0 auto; }
+  .final h2 .accent { color: var(--volt); }
+  .final p { margin: 22px auto 36px; color: var(--cream-dim); font-size: 17px; font-weight: 500; max-width: 480px; }
+
+  /* ---------- FOOTER ---------- */
+  footer { padding: 44px 0; border-top: 1px solid rgba(244,241,232,0.08); }
+  .foot-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+  .foot-inner .small { font-size: 13px; color: var(--gray); font-weight: 500; }
+  .foot-links { display: flex; gap: 24px; }
+  .foot-links a { color: var(--cream-dim); text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; }
+  .foot-links a:hover { color: var(--volt); }
+
+  /* ---------- MOBILE TAB BAR ---------- */
+  .tabbar { display: none; }
+  @media (max-width: 760px) {
+    body { padding-bottom: 92px; }
+    section { padding: 60px 0; }
+    .tabbar {
+      display: flex; position: fixed; top: auto; bottom: 0; left: 0; right: 0; z-index: 60; border-bottom: none;
+      background: rgba(13,18,14,0.97);
+      backdrop-filter: blur(14px);
+      border-top: 1px solid rgba(244,241,232,0.14);
+      padding: 10px 4px calc(10px + env(safe-area-inset-bottom));
+      justify-content: space-around; align-items: flex-end;
+    }
+    .tabbar a {
+      display: flex; flex-direction: column; align-items: center; gap: 5px;
+      flex: 1; text-decoration: none;
+      color: var(--gray); font-size: 10px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding-top: 4px;
+    }
+    .tabbar a.active { color: var(--cream); }
+    .tabbar a .tico { width: 20px; height: 20px; display: block; }
+    .tabbar a .tico path, .tabbar a .tico rect, .tabbar a .tico circle { stroke: currentColor; }
+    .tabbar .drive-tab { margin-top: -30px; color: var(--cream); }
+    .tabbar .drive-tab .puck {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--volt); border: 4px solid var(--ink);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 22px rgba(201,242,77,0.45);
+    }
+    .tabbar .drive-tab .puck svg { width: 24px; height: 24px; }
+  }
+
+  /* ---------- CLUB SMASH INTRO ---------- */
+  .flaw-word { position: relative; display: inline-block; }
+  .flaw-word .shard { position: absolute; top: 0; left: 0; width: 100%; visibility: hidden; pointer-events: none; }
+  .flaw-word.cracked .orig { visibility: hidden; }
+  .flaw-word.cracked .shard { visibility: visible; }
+  .flaw-word.cracked .shard-top {
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 74% 32%, 56% 54%, 35% 42%, 18% 60%, 0 48%);
+    transform: translate(-3px, -5px) rotate(-1.8deg);
+  }
+  .flaw-word.cracked .shard-bot {
+    clip-path: polygon(0 48%, 18% 60%, 35% 42%, 56% 54%, 74% 32%, 100% 40%, 100% 100%, 0 100%);
+    transform: translate(4px, 4px) rotate(1.4deg);
+  }
+  #fly-club { position: fixed; left: 0; top: 0; z-index: 80; width: 44px; height: 160px; display: none; pointer-events: none; will-change: transform; filter: drop-shadow(0 6px 14px rgba(0,0,0,0.45)); }
+  .debris { position: absolute; right: 12%; top: 34%; width: 7px; height: 7px; border-radius: 1px; pointer-events: none; z-index: 75; }
+  .hero.shake { animation: heroshake .35s ease-out; }
+  @keyframes heroshake {
+    0%, 100% { transform: none; }
+    20% { transform: translate(5px, -3px); }
+    40% { transform: translate(-4px, 2px); }
+    60% { transform: translate(2px, -1px); }
+    80% { transform: translate(-1px, 1px); }
+  }
+  @media (max-width: 760px) { #fly-club { width: 34px; height: 124px; } }
+</style>
+</head>
+<body>
+
+<!-- ============ LOGO DEFS (Benz Golfs mark v1.0) ============ -->
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+  <defs>
+    <symbol id="bg-icon" viewBox="0 0 64 64">
+      <text x="25" y="49" text-anchor="middle" fill="currentColor" style="font-family:'Archivo Expanded',Archivo,sans-serif;font-weight:900;font-stretch:125%;font-size:48px">B</text>
+      <circle cx="51" cy="43.5" r="6.5" fill="var(--accent,#c9f24d)"/>
+    </symbol>
+    <symbol id="bg-lockup" viewBox="0 0 434 88">
+      <g transform="translate(0,12)">
+        <text x="25" y="49" text-anchor="middle" fill="currentColor" style="font-family:'Archivo Expanded',Archivo,sans-serif;font-weight:900;font-stretch:125%;font-size:48px">B</text>
+        <circle cx="51" cy="43.5" r="6.5" fill="var(--accent,#c9f24d)"/>
+      </g>
+      <text x="84" y="58" style="font-family:'Archivo Expanded',Archivo,sans-serif;font-weight:900;font-stretch:125%;font-size:40px;letter-spacing:1px"><tspan fill="currentColor">BENZ </tspan><tspan fill="var(--golf,#c9f24d)">GOLFS</tspan></text>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="wrap nav-inner">
+    <a class="wordmark" href="#top" aria-label="Benz Golfs"><svg width="168" height="34" style="color:var(--cream);filter:drop-shadow(0 0 8px rgba(201,242,77,0.18))"><use href="#bg-lockup"/></svg></a>
+    <div class="nav-links">
+      <a href="#how">How It Works</a>
+      <a href="#offers">Pricing</a>
+      <a href="#proof">Results</a>
+      <a href="#faq">FAQ</a>
+      <a href="/drive/" class="drive-link">The Drive</a>
+      <a href="#offers" class="btn btn-volt nav-cta">Get Your Swing Reviewed</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Swing Reviews by Jakob Benz</span>
+      <h1 class="display">Your swing has one big <span class="flaw-word"><span class="orig">flaw.</span><span class="shard shard-top" aria-hidden="true">flaw.</span><span class="shard shard-bot" aria-hidden="true">flaw.</span></span><br><span class="accent">I'll find it.</span></h1>
+      <p class="hero-sub">Send me two videos of your swing. Within 72 hours you get a full slow-motion breakdown: lines, angles, and the exact drills to fix what's actually costing you strokes. <strong>No guesswork. No generic tips.</strong></p>
+      <div class="hero-ctas">
+        <a href="#offers" class="btn btn-volt">Send My Swing · $39</a>
+        <a href="#proof" class="btn btn-ghost">Watch a Real Breakdown</a>
+      </div>
+      <p class="hero-note">48–72 hr turnaround&nbsp;&nbsp;·&nbsp;&nbsp;Filmed on your phone is perfect&nbsp;&nbsp;·&nbsp;&nbsp;Every level welcome</p>
+    </div>
+    <div class="hero-media">
+      <span class="placeholder-tag">Photo / Video</span>
+      <span class="placeholder-desc">Hero shot: Jakob mid-swing at impact, or a short looping clip of a telestrated breakdown</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Slow-Mo Analysis</span><span class="dot">·</span>
+    <span>Custom Drills</span><span class="dot">·</span>
+    <span>48–72 HR Turnaround</span><span class="dot">·</span>
+    <span>Filmed For You On-Course</span><span class="dot">·</span>
+    <span>Live 1-on-1 Lessons</span><span class="dot">·</span>
+    <span>Slow-Mo Analysis</span><span class="dot">·</span>
+    <span>Custom Drills</span><span class="dot">·</span>
+    <span>48–72 HR Turnaround</span><span class="dot">·</span>
+    <span>Filmed For You On-Course</span><span class="dot">·</span>
+    <span>Live 1-on-1 Lessons</span><span class="dot">·</span>
+  </div>
+</div>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="display">Three steps to a better swing</h2>
+      <p>You don't need a launch monitor or a lesson tee. You need a phone, two swings, and someone who knows what to look for.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01 / Film</span>
+        <h3>Film two swings</h3>
+        <p>One <strong>face-on</strong>, one <strong>down-the-line</strong>. Phone camera, normal speed. I'll show you exactly how to set it up. It takes two minutes at the range.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">02 / Send</span>
+        <h3>Send them over</h3>
+        <p>Pick your package, upload your videos, and tell me what you're fighting: the slice, the chunks, the ballooning driver. <strong>That's your part done.</strong></p>
+      </div>
+      <div class="step">
+        <span class="step-num">03 / Fix</span>
+        <h3>Get the fix</h3>
+        <p>Within 72 hours you get a personal video: your swing in slow motion, lines and angles drawn on it, the <strong>one or two faults that matter most</strong>, and the drills that fix them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFERS ============ -->
+<section id="offers">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Pricing</span>
+      <h2 class="display">Pick your breakdown</h2>
+      <p>Every option starts the same way: you send your swing. The difference is how deep we go.</p>
+    </div>
+    <div class="cards">
+
+      <div class="card featured">
+        <span class="badge">Most Popular</span>
+        <div>
+          <div class="tier-tag">Tier 1</div>
+          <h3>Swing Breakdown</h3>
+          <div class="price"><span class="amount">$39</span><span class="per">one-time</span></div>
+          <p class="blurb">The full diagnosis. Find out what's actually wrong, not what some tip video guessed.</p>
+        </div>
+        <ul>
+          <li>Personal video breakdown of your swing</li>
+          <li>Slow-mo with lines &amp; angles drawn on your positions</li>
+          <li>Your 1–2 biggest faults, explained in plain English</li>
+          <li>Custom drills to fix them, no equipment needed</li>
+          <li>Delivered in 48–72 hours</li>
+        </ul>
+        <a href="#" class="btn btn-volt">Send My Swing</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="tier-tag">Tier 2</div>
+          <h3>Breakdown + On-Course Demo</h3>
+          <div class="price"><span class="amount">$89</span><span class="per">one-time</span></div>
+          <p class="blurb">I don't just tell you the fix. I go film myself showing it. Your fault vs. the correct move, side by side.</p>
+        </div>
+        <ul>
+          <li>Everything in the Swing Breakdown</li>
+          <li>Custom demo footage filmed for <em>your</em> swing</li>
+          <li>Your move vs. the right move, side by side</li>
+          <li>See exactly what the drill should look and feel like</li>
+        </ul>
+        <a href="#" class="btn btn-pine">Get the Full Treatment</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="tier-tag">Tier 3</div>
+          <h3>Live 1-on-1 Lesson</h3>
+          <div class="price"><span class="amount">$65</span><span class="per">/ 30 min</span></div>
+          <div class="duo-price">or $110 / 60 min</div>
+          <p class="blurb" style="margin-top:14px;">Real-time coaching over Zoom. Swing on camera or review footage together. Ask anything, adjust live.</p>
+        </div>
+        <ul>
+          <li>Live video lesson, just you and me</li>
+          <li>Swing live (net or range) or screen-share your footage</li>
+          <li>Instant feedback, adjust rep by rep</li>
+          <li>Walk away with a clear practice plan</li>
+        </ul>
+        <a href="#" class="btn btn-pine">Book a Lesson</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF ============ -->
+<section id="proof">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Proof</span>
+      <h2 class="display">Watch a real breakdown</h2>
+      <p>This is exactly what lands in your inbox. No teaser edit. A full review, start to finish.</p>
+    </div>
+    <div class="proof-grid">
+      <div class="proof-video">
+        <span class="placeholder-tag">Sample Breakdown Video</span>
+        <span class="placeholder-desc">Embed the full sample breakdown here (unlisted YouTube). This is the #1 conversion asset on the page.</span>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <p>"Testimonial placeholder. Pull a real DM (with permission): what fault Jakob found and what changed for the golfer."</p>
+          <span class="who">Follower, 14 handicap</span>
+        </div>
+        <div class="quote">
+          <p>"Second testimonial placeholder. Ideally one that mentions the on-course demo or a score/ball-flight result."</p>
+          <span class="who">Follower, 22 handicap</span>
+        </div>
+        <div class="quote">
+          <p>"Third slot: a DM screenshot image works even better than text here. It reads as receipts, not marketing."</p>
+          <span class="who">DM screenshot</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-media">
+      <span class="placeholder-tag">Photo</span>
+      <span class="placeholder-desc">Jakob on the course, tournament or practice shot. Real, not stocky.</span>
+    </div>
+    <div class="about-copy">
+      <span class="eyebrow">Who's Breaking Down Your Swing</span>
+      <h2 class="display">I've spent my life chasing a perfect swing. Yours only needs a better one.</h2>
+      <p>I'm Jakob Benz. I've played golf at a near-D1 level, which means thousands of hours of practice, competition, and studying the swing, mine and everyone else's.</p>
+      <p>On Instagram, followers started sending me their swings unprompted, asking what was wrong. I kept finding the same thing: most golfers aren't bad. They're working on the <em>wrong problem</em>. Fix the real fault and everything downstream cleans itself up.</p>
+      <p>That's what this is. Not swing tips. <strong>Your</strong> swing, diagnosed.</p>
+      <div class="stat-row">
+        <div class="stat"><div class="num">[XX]K</div><div class="label">Followers on IG</div></div>
+        <div class="stat"><div class="num">[+X]</div><div class="label">Playing handicap</div></div>
+        <div class="stat"><div class="num">72h</div><div class="label">Max turnaround</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="display">Questions, answered</h2>
+    </div>
+    <div class="faq-list">
+      <details open>
+        <summary>How do I film my swing correctly?</summary>
+        <p>Two angles: <strong>face-on</strong> (camera directly facing your chest, hip height) and <strong>down-the-line</strong> (camera behind you, looking down the target line, hip height). Normal speed is fine. I'll slow it down on my end. Full swing with a mid-iron or driver, whichever you're struggling with. You'll get a short guide with examples right after checkout.</p>
+      </details>
+      <details>
+        <summary>How fast do I get my breakdown?</summary>
+        <p>Within <strong>72 hours</strong> of your videos landing, usually faster. On-course demo packages can take a couple extra days since I film your demo footage personally.</p>
+      </details>
+      <details>
+        <summary>Am I good enough (or too good) for this?</summary>
+        <p>If you swing a golf club, you qualify. I've reviewed swings from beginners to single-digit handicaps. The faults change, the process doesn't: find the one thing costing you the most, fix that first.</p>
+      </details>
+      <details>
+        <summary>What do I get, exactly?</summary>
+        <p>A personal video: your swing in slow motion with lines and angles drawn on it, a plain-English explanation of your 1–2 biggest faults, and specific drills to fix them. It's yours to keep and rewatch. This isn't a template; every video is recorded from scratch for your swing.</p>
+      </details>
+      <details>
+        <summary>What if I'm not happy with my review?</summary>
+        <p>Tell me. If your breakdown didn't give you something clear and useful to work on, I'll re-review your swing or refund you. Simple as that.</p>
+      </details>
+      <details>
+        <summary>Do you offer ongoing coaching?</summary>
+        <p>Coming soon: a monthly option with ongoing reviews and direct access is in the works. For now, plenty of golfers send a re-check breakdown a few weeks after their first one to confirm the fix is sticking.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="wrap">
+    <h2 class="display">Stop guessing.<br><span class="accent">Send your swing.</span></h2>
+    <p>Two videos from your phone. One breakdown that changes what you work on. Your next range session should actually count.</p>
+    <a href="#offers" class="btn btn-volt">Get Your Swing Reviewed · From $39</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap foot-inner">
+    <a class="wordmark" href="#top" aria-label="Benz Golfs"><svg width="133" height="27" style="color:var(--cream)"><use href="#bg-lockup"/></svg></a>
+    <div class="foot-links">
+      <a href="#">Instagram</a>
+      <a href="#">Contact</a>
+      <a href="#faq">Refund Policy</a>
+    </div>
+    <span class="small">© 2026 Benz Golfs. All rights reserved.</span>
+  </div>
+</footer>
+
+<nav class="tabbar" aria-label="Mobile navigation">
+  <a href="/"><svg class="tico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 L12 4 L21 11 M6 10 V20 H18 V10"/></svg><span>Home</span></a>
+  <a href="#offers"><svg class="tico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 H20 V11 L11 20 L3 12 Z"/><circle cx="16" cy="7" r="1.6"/></svg><span>Pricing</span></a>
+  <a href="/drive/" class="drive-tab"><span class="puck"><svg viewBox="0 0 24 24" fill="none"><line x1="7" y1="21" x2="7" y2="3" stroke="#0d120e" stroke-width="2.4" stroke-linecap="round"/><g><rect x="7" y="3" width="5" height="5" fill="#0d120e"/><rect x="12" y="3" width="5" height="5" fill="none" stroke="#0d120e" stroke-width="1.2"/><rect x="7" y="8" width="5" height="5" fill="none" stroke="#0d120e" stroke-width="1.2"/><rect x="12" y="8" width="5" height="5" fill="#0d120e"/></g></svg></span><span>The Drive</span></a>
+  <a href="#proof"><svg class="tico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="3"/><path d="M10 8.5 L15 11 L10 13.5 Z"/></svg><span>Results</span></a>
+  <a href="#faq"><svg class="tico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 9 A3.5 3.5 0 1 1 12 12.7 V14.4"/><circle cx="12" cy="18.4" r="0.8"/></svg><span>FAQ</span></a>
+</nav>
+
+<div id="fly-club" aria-hidden="true">
+  <svg viewBox="0 0 44 160" width="100%" height="100%">
+    <rect x="18.5" y="2" width="8" height="36" rx="4" fill="#20261f"/>
+    <rect x="20.5" y="36" width="4" height="84" fill="#b9c0c7"/>
+    <path d="M20.5 116 L24.5 116 L27 132 L25 133 L21.5 132 Z" fill="#aeb5bc"/>
+    <path d="M25.8 130 L5 137 C3.5 137.6 3 139 3.2 141 L4.5 149 C4.8 150.8 6.2 152 8.2 152 L34 150 C37.5 149.6 39.5 147 38.8 143.5 L37.4 137.5 C36.7 134.5 34 132.6 30.5 133 Z" fill="#c6ccd2" stroke="#7e868e" stroke-width="1.2" stroke-linejoin="round"/>
+    <line x1="8" y1="141" x2="33" y2="138.6" stroke="#8b939b" stroke-width="1"/>
+    <line x1="8.4" y1="144.4" x2="34" y2="142" stroke="#8b939b" stroke-width="1"/>
+    <line x1="8.8" y1="147.8" x2="34.6" y2="145.4" stroke="#8b939b" stroke-width="1"/>
+    <path d="M6 151 L33 149" stroke="#c9f24d" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </svg>
+</div>
+
+<script>
+(function () {
+  var word, club;
+  function crack(withFx) {
+    word.classList.add('cracked');
+    club.getAnimations().forEach(function (a) { a.cancel(); });
+    word.appendChild(club);
+    club.style.position = 'absolute';
+    club.style.display = 'block';
+    club.style.left = 'auto';
+    club.style.right = '-38px';
+    club.style.top = '-92px';
+    club.style.transform = 'rotate(46deg)';
+    if (withFx) {
+      var hero = document.querySelector('.hero');
+      hero.classList.add('shake');
+      var colors = ['#c9f24d', '#f4f1e8', '#7d857e'];
+      for (var i = 0; i < 9; i++) {
+        var p = document.createElement('span');
+        p.className = 'debris';
+        p.style.background = colors[i % 3];
+        word.appendChild(p);
+        var ang = (-150 + Math.random() * 250) * Math.PI / 180;
+        var d = 45 + Math.random() * 80;
+        p.animate([
+          { transform: 'translate(0,0) rotate(0deg)', opacity: 1 },
+          { transform: 'translate(' + (Math.cos(ang) * d) + 'px,' + (Math.sin(ang) * d + 40) + 'px) rotate(' + (Math.random() * 540 - 270) + 'deg)', opacity: 0 }
+        ], { duration: 650 + Math.random() * 350, easing: 'cubic-bezier(.2,.5,.7,1)', fill: 'forwards' });
+        (function (el) { setTimeout(function () { el.remove(); }, 1100); })(p);
+      }
+    }
+  }
+  function fly() {
+    var r = word.getBoundingClientRect();
+    club.style.display = 'block';
+    var startX = window.innerWidth + 200;
+    var startY = Math.max(40, r.top - 220);
+    var endX = r.right - 52;
+    var endY = r.top - 78;
+    var anim = club.animate([
+      { transform: 'translate(' + startX + 'px,' + startY + 'px) rotate(-674deg)' },
+      { transform: 'translate(' + endX + 'px,' + endY + 'px) rotate(46deg)' }
+    ], { duration: 850, easing: 'cubic-bezier(.45,0,1,.6)', fill: 'forwards' });
+    anim.onfinish = function () { crack(true); };
+  }
+  window.addEventListener('load', function () {
+    word = document.querySelector('.flaw-word');
+    club = document.getElementById('fly-club');
+    if (!word || !club) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !club.animate) {
+      crack(false);
+      return;
+    }
+    setTimeout(fly, 550);
+  });
+})();
+</script>
+</body>
+</html>
