@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+  command = ""
+
+# config.js is the single edit point for links and IDs; never let browsers cache a stale copy.
+[[headers]]
+  for = "/config.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
