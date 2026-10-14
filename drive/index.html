@@ -60,6 +60,9 @@
   .btn-volt:hover { box-shadow: 0 8px 28px rgba(201,242,77,0.35); }
   .btn-ghost { background: transparent; color: var(--cream); border: 1.5px solid rgba(244,241,232,0.35); }
   .btn-ghost:hover { border-color: var(--cream); }
+  .btn.is-disabled, .btn.is-disabled:hover { opacity: 0.45; cursor: not-allowed; transform: none; box-shadow: none; }
+  .btn-stack { display: flex; flex-direction: column; gap: 10px; align-self: stretch; }
+  .btn-stack .btn { text-align: center; }
 
   /* ---------- NAV ---------- */
   nav {
@@ -285,6 +288,36 @@
   .oneoff-card .btn { padding: 12px 22px; font-size: 12.5px; align-self: flex-start; margin-top: 6px; }
   @media (max-width: 760px) { .oneoff-grid { grid-template-columns: 1fr; } }
 
+  /* ---------- WAITLIST ---------- */
+  .waitlist {
+    max-width: 860px; margin-top: 46px;
+    border: 1px solid rgba(201,242,77,0.4); border-radius: var(--radius);
+    padding: 30px; background: linear-gradient(160deg, rgba(16,56,42,0.5), rgba(13,18,14,0.2));
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center;
+  }
+  .waitlist h3 { font-family: 'Archivo Expanded', sans-serif; font-weight: 900; text-transform: uppercase; font-size: 19px; margin-bottom: 8px; }
+  .waitlist p { color: var(--gray); font-size: 14.5px; font-weight: 500; }
+  .wl-form { display: flex; gap: 10px; }
+  .wl-form input[type="email"] {
+    flex-grow: 1; min-width: 0;
+    font-family: 'Archivo', sans-serif; font-size: 15px; font-weight: 500;
+    color: var(--cream); background: rgba(13,18,14,0.6);
+    border: 1.5px solid rgba(244,241,232,0.2); border-radius: 999px; padding: 14px 20px;
+  }
+  .wl-form input[type="email"]:focus { outline: none; border-color: var(--volt); }
+  .wl-form input::placeholder { color: var(--gray); }
+  .wl-form .btn { padding: 14px 26px; }
+  .wl-hp { position: absolute; left: -9999px; }
+  .wl-done { display: none; color: var(--volt); font-weight: 700; font-size: 15px; }
+  .waitlist.joined .wl-form { display: none; }
+  .waitlist.joined .wl-done { display: block; }
+  .waitlist iframe { width: 100%; border: 0; }
+  @media (max-width: 760px) {
+    .waitlist { grid-template-columns: 1fr; padding: 24px; }
+    .wl-form { flex-direction: column; }
+    .wl-form .btn { text-align: center; }
+  }
+
   /* ---------- FINAL ---------- */
   .final {
     background:
@@ -299,6 +332,11 @@
   footer { padding: 40px 0; border-top: 1px solid rgba(244,241,232,0.08); }
   .foot-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
   .foot-inner .small { font-size: 13px; color: var(--gray); font-weight: 500; }
+  .foot-links { display: flex; gap: 24px; }
+  .foot-links a { color: var(--cream-dim); text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; }
+  .foot-links a:hover { color: var(--volt); }
+  .foot-links a.is-disabled { opacity: 0.4; cursor: not-allowed; }
+  .foot-links a.is-disabled:hover { color: var(--cream-dim); }
 
   /* ---------- MOBILE TAB BAR ---------- */
   .tabbar { display: none; }
@@ -604,7 +642,7 @@
           <li>Scorecard tracking + level badges</li>
           <li>Members' drill library for your hole</li>
         </ul>
-        <a href="#" class="btn btn-ghost" style="width:100%;text-align:center;">Start The Drive · $59/mo</a>
+        <a class="btn btn-ghost" style="width:100%;text-align:center;" data-product="standard">Start The Drive · $59/mo</a>
       </div>
       <div class="pr-card featured">
         <span class="badge">Premium: Live Coaching</span>
@@ -618,7 +656,7 @@
           <li>Member pricing on on-course demo videos ($59 vs $89)</li>
           <li>First claim on extra lesson slots each week</li>
         </ul>
-        <a href="#" class="btn btn-volt" style="width:100%;text-align:center;">Go Premium · $99/mo</a>
+        <a class="btn btn-volt" style="width:100%;text-align:center;" data-product="premium">Go Premium · $99/mo</a>
       </div>
     </div>
 
@@ -628,13 +666,36 @@
         <h4>Swing Breakdown</h4>
         <div class="op">$39 <span>one-time</span></div>
         <p>One video breakdown: your one or two biggest faults plus drills, delivered in 48–72 hours. Counts as your placement and credits toward your first month if you join The Drive within 30 days.</p>
-        <a href="#" class="btn btn-ghost">Get a Breakdown</a>
+        <a class="btn btn-ghost" data-product="breakdown">Get a Breakdown</a>
       </div>
       <div class="oneoff-card">
         <h4>Live 1-on-1 Lesson</h4>
         <div class="op">$65 <span>/ 30 min</span> &nbsp;·&nbsp; $110 <span>/ 60 min</span></div>
         <p>A single live Zoom lesson, no membership required. Swing on camera or review footage together. You leave with a practice plan.</p>
-        <a href="#" class="btn btn-ghost">Book a Lesson</a>
+        <div class="btn-stack">
+          <a class="btn btn-ghost" data-product="zoom30">Book 30 Min · $65</a>
+          <a class="btn btn-ghost" data-product="zoom60">Book 60 Min · $110</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ WAITLIST ============ -->
+    <!-- Uses Netlify Forms by default (the form is detected at deploy time; submissions show in the Netlify dashboard under Forms).
+         If TALLY_WAITLIST_FORM_ID is set in /config.js, the Tally form is embedded here instead. -->
+    <div class="waitlist" id="waitlist">
+      <div>
+        <h3>Not open yet</h3>
+        <p>Leave your email and you will hear first when The Drive opens.</p>
+      </div>
+      <div class="wl-slot">
+        <form class="wl-form" name="drive-waitlist" method="POST" action="/drive/?waitlist=joined" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="drive-waitlist">
+          <p class="wl-hp" aria-hidden="true"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <label for="wl-email" class="wl-hp">Email</label>
+          <input id="wl-email" type="email" name="email" placeholder="you@email.com" required autocomplete="email">
+          <button type="submit" class="btn btn-volt">Join</button>
+        </form>
+        <p class="wl-done">You are on the list. You will get one email when The Drive opens.</p>
       </div>
     </div>
   </div>
@@ -652,6 +713,11 @@
 <footer>
   <div class="wrap foot-inner">
     <a class="wordmark" href="#top" aria-label="Benz Golfs"><svg width="133" height="27" style="color:var(--cream)"><use href="#bg-lockup"/></svg></a>
+    <div class="foot-links">
+      <a data-link="instagram">Instagram</a>
+      <a data-link="contact">Contact</a>
+      <a href="/#faq">Refund Policy</a>
+    </div>
     <span class="small">The Drive is a Benz Golfs program · © 2026 Benz Golfs</span>
   </div>
 </footer>
@@ -663,5 +729,36 @@
   <a href="#scorecard"><svg class="tico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 10 H17 M7 14 H13"/></svg><span>Scorecard</span></a>
   <a href="#join"><svg class="tico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 H20 V11 L11 20 L3 12 Z"/><circle cx="16" cy="7" r="1.6"/></svg><span>Join</span></a>
 </nav>
+
+<script src="/config.js"></script>
+<script src="/assets/site.js"></script>
+<script>
+(function () {
+  var cfg = window.BENZ_CONFIG || {};
+  var box = document.getElementById('waitlist');
+  if (!box) return;
+  var tallyId = (cfg.TALLY_WAITLIST_FORM_ID || '').trim();
+  if (tallyId) {
+    /* Swap the Netlify form for the Tally embed. */
+    var slot = box.querySelector('.wl-slot');
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://tally.so/embed/' + encodeURIComponent(tallyId) + '?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1';
+    iframe.title = 'The Drive waitlist';
+    iframe.height = '180';
+    iframe.loading = 'lazy';
+    slot.innerHTML = '';
+    slot.appendChild(iframe);
+    var s = document.createElement('script');
+    s.src = 'https://tally.so/widgets/embed.js';
+    document.body.appendChild(s);
+    return;
+  }
+  /* Netlify Forms redirects back here after a submission. */
+  if (/[?&]waitlist=joined/.test(window.location.search)) {
+    box.classList.add('joined');
+    box.scrollIntoView();
+  }
+})();
+</script>
 </body>
 </html>
