@@ -10,7 +10,7 @@ window.BENZ_CONFIG = {
   /* Create each link in the Stripe dashboard. Set the link's success URL to
      https://benzgolfs.netlify.app/thanks/?product=<slug> using the slug shown
      next to each key. */
-  STRIPE_LINK_BREAKDOWN: "",        /* $39 one-time.        slug: breakdown */
+  STRIPE_LINK_BREAKDOWN: "",        /* $35 one-time.        slug: breakdown */
   STRIPE_LINK_DEMO: "",             /* $89 one-time.        slug: demo      */
   STRIPE_LINK_ZOOM_30: "",          /* $65 live lesson.     slug: zoom30    */
   STRIPE_LINK_ZOOM_60: "",          /* $110 live lesson.    slug: zoom60    */

@@ -60,7 +60,7 @@ All values live in `config.js` and are empty by default. A buy button with an em
 
 | Key | Used by | Value to paste |
 |-----|---------|----------------|
-| `STRIPE_LINK_BREAKDOWN` | Swing Breakdown, $39 (home and Drive page) | Stripe Payment Link |
+| `STRIPE_LINK_BREAKDOWN` | Swing Breakdown, $35 (home and Drive page) | Stripe Payment Link |
 | `STRIPE_LINK_DEMO` | Breakdown + On-Course Demo, $89 | Stripe Payment Link |
 | `STRIPE_LINK_ZOOM_30` | Live 1-on-1 Lesson, 30 min, $65 | Stripe Payment Link |
 | `STRIPE_LINK_ZOOM_60` | Live 1-on-1 Lesson, 60 min, $110 | Stripe Payment Link |
